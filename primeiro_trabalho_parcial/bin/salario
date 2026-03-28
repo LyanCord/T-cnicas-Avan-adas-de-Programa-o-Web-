@@ -1,0 +1,13 @@
+import 'dart:io';
+
+void main() {
+  print("Digite quanto você ganha por hora:");
+  double valorHora = double.parse(stdin.readLineSync()!);
+
+  print("Digite quantas horas você trabalhou no mês:");
+  double horas = double.parse(stdin.readLineSync()!);
+
+  double salario = valorHora * horas;
+
+  print("O salário mensal é: R\$ $salario");
+}
